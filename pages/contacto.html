@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100;300&family=Libre+Baskerville&family=Poppins:wght@100;200&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/5c4df6f42c.js" crossorigin="anonymous"></script>
+    <link rel="short icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sitio Camila Bravo</title>
+</head>
+<body>
+    <div class="body">
+     <!--Logo,barra de busqueda y de navegacion -->
+    <header>
+        <div>
+            <a href="../index.html"><img src="../img/logo.png" alt="logo de nuestro negocio" width="100px" height="100px"></a>        
+        </div>
+    <!--aca va mi div con mi barra de busqueda-->
+        <nav>  
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a> </li>
+                <li><a href="../pages/combosofertas.html"> Ofertas - Combos</a> </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    <!--cierre logo, navegacion, barra de busqueda -->
+    </header>   
+    <main>
+        <div>
+        <h1>ENVIOS A DOMICILIO</h1>
+        <h3>Zona Villa Crespo - Palermo. Compra minima $3000</h3>
+        </div>
+        <section>
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum minus excepturi quos similique commodi repellat adipisci maxime rem deleniti earum dolores perspiciatis cum, explicabo ab porro ipsam praesentium iusto dolorum.
+            Explicabo asperiores molestiae, quis doloremque eveniet eius possimus saepe maiores, iste itaque dignissimos perferendis, magnam unde! Voluptate ad quaerat, illum tempore dolores velit laboriosam sed assumenda praesentium quibusdam. Harum, vero.
+             Ab incidunt aspernatur repellat voluptas adipisci animi accusantium ducimus beatae cupiditate delectus, dicta tempora, eum nesciunt praesentium odit deleniti iste quaerat sunt aperiam necessitatibus! Ducimus earum beatae sint natus ex?</p>   
+        </section>
+     <!--instrucciones de compra y envios--> 
+        <section>
+            <div>
+                <h2>Como hacer tu pedido</h2>   
+            </div>
+            <div>
+                <h4>¿Por donde realizo el pedido?</h4>
+                <p><strong> Medios para realizar un pedido:</strong></p>
+                <ul>
+                    <li>Telefonicamente: <br> <b>+541134446791</b></li>
+                    <li>whatsapp: <br> <b>+541134446791</b></li>
+                    <li>Página Web </li>
+                </ul>
+            </div>
+            <div>
+                <h4>¿Cuales son los medios de pago?</h4>
+                <p><strong>Medios de pago autorizados:</strong></p>
+                <ul>   
+                    <li>Efectivo</li>
+                    <li>Débito o Crédito (posnet a domicilio)</li>
+                    <li>Transferencia Bancaria (una vez armado tu pedido te enviamos el ticket para que puedas realizar la transferencia)</li>
+                    <li>Mercado Pago (Transferencia o Qr)</li>
+                </ul>
+            </div>
+            <div>
+                <h4>¿Que debo tener en cuenta?</h4>
+                <p><strong>Acerca de los pedidos:</strong></p>
+                <ul>
+                    <li>Los pedidos telefónicos para ser enviados en el mismo día se tomarán de 8 a 13hrs únicamente, luego de dicho horario el pedido se toma para el dia siguiente. (Teniendo en cuenta Stock del momento)</li>
+                    <li>Los pedidos de productos de elaboracion casera son tomados con 2 dias minimos de anticipacación. </li>
+                    <li>Los envios a domicilio son a un radio de 10 cuadras de nuestra dirección.</li>
+                    <li>Los envios NO tienen costo. El minimo de compra es de $3000</li>
+                    <li>Horario de envios: 11 a 20hs</li>
+                </ul>
+            </div>
+        </section>   
+    <!--cierre de instrucciones de compra y envios-->   
+    <!--formulario-->
+        <section>
+        <h2>¡Nos interesa tu opinión!</h2>
+        <form action="" method=""> 
+            <fieldset>
+                <legend><strong>Dejanos tu comentario</strong></legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+                <label for="edad">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email@ejemplo.com">
+                <br>
+                <label for="telefono">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono"placeholder="+5411123456">
+                <br>
+                <label for="asunto">Asunto:</label> 
+                <input type="text" name="asunto" id="asunto">
+                <br>
+                <label for="contentido">Contenido:</label>
+                <br>
+                <textarea name="contenido" id="" cols="30" rows="10"></textarea>   
+            </fieldset>
+            <br>
+                <input type="submit" value="Enviar">
+                <input type="reset"  value="Borrar campos">    
+                <p>¡Gracias por completar el formulario! Te 
+                responderemos a la brevedad.</p>
+        </form>   
+        </section> 
+    </main>    
+     <!--fin de formulario-->   
+     <!--pie de pagina-->     
+    <footer>
+        <section>
+        <div>
+         <h3>Contacto:</h3>
+         <a href="../pages/contacto.html"><strong>Preguntas frecuentes</strong></a>    
+         <br>
+         <br>   
+         <i class="fa-solid fa-square-phone"> </i>
+            <a href=" tel:1134446791">+541134446791</a>
+            <br>
+            <i class="fa-solid fa-location-dot"></i>
+            <br>
+            <p>Av. Cordoba 4418 CBA Arg</p>
+            <i class="fa-regular fa-clock"></i>
+            <br>
+            <p>Lun-Vie: 9:30am - 14:00am / 16:00 - 20:00pm</p>
+            <p>Sab: 9:30am - 14:00am / 15:00 - 18:00pm</p>
+        </div>
+        <div class="ubicacion">    
+        <h3>Ubicación:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3502201123088!2d-58.42841296839693!3d-34.59530454906113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca79fcc19241%3A0x92c281a9481429c6!2sAv.%20C%C3%B3rdoba%204418%2C%20C1183%20CABA!5e0!3m2!1ses-419!2sar!4v1665029369927!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+        <h3>FOLLOW US</h3>
+        <a href="http://www.instagram.com/lareina_delamilanesa/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </div>
+    </section>
+<!--Whatsapp anclado en la derecha-->
+    <div>
+        <a href="https://api.whatsapp.com/message/IVGJLJ7MFBCQJ1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></i>     
+    </div>    
+    </footer> 
+    </div>
+</body>
+</html>
+   
