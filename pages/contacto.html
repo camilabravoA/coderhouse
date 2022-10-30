@@ -18,7 +18,7 @@
      <!--Logo,barra de busqueda y de navegacion -->
     <header>
         <div>
-            <a href="../index.html"><img src="../img/logo.png" alt="logo de nuestro negocio" width="100px" height="100px"></a>        
+            <a href="../index.html"><img src="../img/logo.png" alt="logo de nuestro negocio" width="75px" height="75px"></a>        
         </div>
     <!--aca va mi div con mi barra de busqueda-->
         <nav>  
@@ -32,10 +32,10 @@
         </nav>
     <!--cierre logo, navegacion, barra de busqueda -->
     </header>   
-    <main>
+    <main id="main">
         <div>
         <h1>ENVIOS A DOMICILIO</h1>
-        <h3>Zona Villa Crespo - Palermo. Compra minima $3000</h3>
+        <h3 class="center">Zona Villa Crespo - Palermo. Compra minima $3000</h3>
         </div>
         <section>
             <h2>Sobre Nosotros</h2>
@@ -44,41 +44,43 @@
              Ab incidunt aspernatur repellat voluptas adipisci animi accusantium ducimus beatae cupiditate delectus, dicta tempora, eum nesciunt praesentium odit deleniti iste quaerat sunt aperiam necessitatibus! Ducimus earum beatae sint natus ex?</p>   
         </section>
      <!--instrucciones de compra y envios--> 
-        <section>
+        <h2>Como hacer tu pedido</h2>   
+        <section class="pedido">
             <div>
-                <h2>Como hacer tu pedido</h2>   
+                <h4>¿Cuales son los medios de pago?</h4>
+                <p><strong>Medios de pago autorizados:</strong></p>
+                <ol>   
+                    <li>Efectivo</li>
+                    <li>Débito o Crédito (posnet a domicilio)</li>
+                    <li>Transferencia Bancari (una vez armado tu pedido 
+                    <br>te enviamos
+                    el ticket para que puedas realizar la transferencia)</li>
+                    <li>Mercado Pago (Transferencia o Qr)</li>
+                </ol>
             </div>
             <div>
                 <h4>¿Por donde realizo el pedido?</h4>
                 <p><strong> Medios para realizar un pedido:</strong></p>
-                <ul>
+                <ol>
                     <li>Telefonicamente: <br> <b>+541134446791</b></li>
-                    <li>whatsapp: <br> <b>+541134446791</b></li>
+                    <li>Whatsapp: <br> <b>+541134446791</b></li>
                     <li>Página Web </li>
-                </ul>
+                </ol>
             </div>
-            <div>
-                <h4>¿Cuales son los medios de pago?</h4>
-                <p><strong>Medios de pago autorizados:</strong></p>
-                <ul>   
-                    <li>Efectivo</li>
-                    <li>Débito o Crédito (posnet a domicilio)</li>
-                    <li>Transferencia Bancaria (una vez armado tu pedido te enviamos el ticket para que puedas realizar la transferencia)</li>
-                    <li>Mercado Pago (Transferencia o Qr)</li>
-                </ul>
-            </div>
-            <div>
-                <h4>¿Que debo tener en cuenta?</h4>
-                <p><strong>Acerca de los pedidos:</strong></p>
-                <ul>
-                    <li>Los pedidos telefónicos para ser enviados en el mismo día se tomarán de 8 a 13hrs únicamente, luego de dicho horario el pedido se toma para el dia siguiente. (Teniendo en cuenta Stock del momento)</li>
-                    <li>Los pedidos de productos de elaboracion casera son tomados con 2 dias minimos de anticipacación. </li>
-                    <li>Los envios a domicilio son a un radio de 10 cuadras de nuestra dirección.</li>
-                    <li>Los envios NO tienen costo. El minimo de compra es de $3000</li>
-                    <li>Horario de envios: 11 a 20hs</li>
-                </ul>
-            </div>
-        </section>   
+        </section>
+        <section class="pedido">   
+        <div>
+            <h4>¿Que debo tener en cuenta?</h4>
+            <p><strong>Acerca de los pedidos:</strong></p>
+            <ol>
+                <li>Los pedidos telefónicos para ser enviados en el mismo día se tomarán de 8 a 13hrs únicamente, luego de dicho horario el pedido se toma para el dia siguiente. (Teniendo en cuenta Stock del momento)</li>
+                <li>Los pedidos de productos de elaboracion casera son tomados con 2 dias minimos de anticipacación. </li>
+                <li>Los envios a domicilio son a un radio de 10 cuadras de nuestra dirección.</li>
+                <li>Los envios NO tienen costo. El minimo de compra es de $3000</li>
+                <li>Horario de envios: 11 a 20hs</li>
+            </ol>
+         </div>
+         </section>
     <!--cierre de instrucciones de compra y envios-->   
     <!--formulario-->
         <section>
@@ -115,40 +117,37 @@
                 responderemos a la brevedad.</p>
         </form>   
         </section> 
+        <div>
+            <a href="https://api.whatsapp.com/message/IVGJLJ7MFBCQJ1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></i>     
+        </div> 
     </main>    
      <!--fin de formulario-->   
-     <!--pie de pagina-->     
+    <!--pie de pagina-->     
     <footer>
-        <section>
+        <section class="footer">
         <div>
-         <h3>Contacto:</h3>
-         <a href="../pages/contacto.html"><strong>Preguntas frecuentes</strong></a>    
-         <br>
-         <br>   
-         <i class="fa-solid fa-square-phone"> </i>
-            <a href=" tel:1134446791">+541134446791</a>
-            <br>
-            <i class="fa-solid fa-location-dot"></i>
-            <br>
-            <p>Av. Cordoba 4418 CBA Arg</p>
-            <i class="fa-regular fa-clock"></i>
-            <br>
-            <p>Lun-Vie: 9:30am - 14:00am / 16:00 - 20:00pm</p>
-            <p>Sab: 9:30am - 14:00am / 15:00 - 18:00pm</p>
+            <h3>Contacto:</h3>
+            <ol>
+                <li > <a href="../pages/contacto.html"><strong class="contactoColor">Preguntas frecuentes</strong></a>
+                </li>    
+                <li> <i class="fa-solid fa-square-phone"> <a href=" tel:1134446791"> +541134446791</a></i></li>
+                <li> <i class="fa-solid fa-location-dot"></i> Av. Cordoba 4418 CBA Arg. </li>
+                <li> <i class="fa-regular fa-clock"></i> Lun-Vie: 9:30am - 14:00am / 16:00 - 20:00pm</li>
+                <li><i class="fa-regular fa-clock"></i> Sab: 9:30am - 14:00am / 15:00 - 18:00pm</li>
+            </ol>
         </div>
-        <div class="ubicacion">    
-        <h3>Ubicación:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3502201123088!2d-58.42841296839693!3d-34.59530454906113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca79fcc19241%3A0x92c281a9481429c6!2sAv.%20C%C3%B3rdoba%204418%2C%20C1183%20CABA!5e0!3m2!1ses-419!2sar!4v1665029369927!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>    
+            <h3>Ubicación:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3502201123088!2d-58.42841296839693!3d-34.59530454906113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca79fcc19241%3A0x92c281a9481429c6!2sAv.%20C%C3%B3rdoba%204418%2C%20C1183%20CABA!5e0!3m2!1ses-419!2sar!4v1665029369927!5m2!1ses-419!2sar" width="300" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div>
-        <h3>FOLLOW US</h3>
+        </section>
+        <div class="followus">
+        <h5>FOLLOW US
         <a href="http://www.instagram.com/lareina_delamilanesa/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </h5>
         </div>
-    </section>
-<!--Whatsapp anclado en la derecha-->
-    <div>
-        <a href="https://api.whatsapp.com/message/IVGJLJ7MFBCQJ1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></i>     
-    </div>    
+        <hr>
+        <p class="parrafo">Todos los derechos reservados © 2022 <b>Camila Bravo</b></p>
     </footer> 
     </div>
 </body>
