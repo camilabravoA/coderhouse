@@ -6,20 +6,22 @@ font-family: 'Poppins', sans-serif;*/
     margin: 0;
     padding: 0;
 }
+main{
+    background-image: url(/img/fondo-madera-negro.jpg);
+}
 .body{
     font-family: Poppins, sans-serif;
 }
 header{
   background: rgba(0,0,0,0.9);
-  width: 100%;
-  top: 0%;
-  position: fixed;
 }
 .formularioIngreso{
     display: flex;
     justify-content: flex-end;
 }
 .formularioIngreso a {
+    text-decoration: none;
+    color: yellow;
     padding-top: 1%; 
     padding-right: 1%;
     margin-right: 2% ;
@@ -51,22 +53,22 @@ nav ul li:hover {
     background: #3ead47;
     padding: 3px;
 }
-main{
-    margin: 10%;
-}
+
 footer{
     color: beige;
     background-color: black;
 }
-.center{
-    text-align: center;
-    margin: 10px;
-    padding: 3px;
-}
+
 .titulos{
     font-family: Dancing Script, cursive;
-    font-size: 8rem;
+    font-size: 100px;
+    color: ghostwhite;
     text-align: center;
+}
+h6{ 
+    text-align: center;
+    background-color: #449743c9;
+    font-size: 30px;
 }
 main div h1 {
     color: white;
@@ -75,12 +77,10 @@ main div h1 {
     font-size: 300%;
 }
 .pedido{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
 }
-.pedido div{
-    width: 100%;
-    
-}
+
 ol li{
     margin: 13px;
     list-style:inside;
@@ -89,16 +89,25 @@ h4{
     text-decoration: underline;
     font-size: 25px;
 }
-h2{ 
-    border-bottom: groove 2px green; 
-    border-top:  groove 2px green;
-    font-size: 3rem;
-    margin: 20px;
+.center{
+    display: flex;
+    justify-content: center;
 }
+h2{
+    font-size: 40px;
+    margin-top: 4%;
+    color: ghostwhite;
+    border-bottom: solid ghostwhite 1px;
+    border-top: solid ghostwhite 1px;
+    margin-bottom: 4%;
+}
+    
 .fa-whatsapp{
     position: fixed;
     font-size: 80px;
-    color: green;
+    color: white;
+    background-color: green;
+    border-radius: 39px;
     bottom: 50px;
     right: 20px;
 }   
@@ -132,8 +141,6 @@ div h5{
     padding: 3px;
     margin: 10px;
     text-align: center;
-    border-bottom: solid ghostwhite 1px;
-    border-top: solid ghostwhite 1px;
 }
 hr{
     margin: 0 auto;
@@ -158,7 +165,30 @@ hr{
 li i a{
     color: bisque;
 }
-
+.combos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.combos div{
+    margin: 4%;
+    text-align: center;
+}
+.combos img{
+    border-radius: 85px;
+}
+.combos div p {
+    font-size: 30px;
+    font-family: "Frank Ruhl Libre" ;
+    color: #aab3ab;
+}
+.combos a  { 
+    text-decoration: none;
+    color: white;
+    border: outset 3px;
+    background-color: black;
+    line-height: 5;
+    padding: 2%;
+}  
 .ofertaspollo{
     display: flex;
     flex-direction: row;
@@ -166,9 +196,7 @@ li i a{
     justify-content:center;
     width: 100%;
 }
-.ofertaspollo article{
-    margin:2%;
-}
+
 .borderPrecios{ 
     border-bottom: 1px solid #d2d5d8;
     border-right: 1px solid #d2d5d8;
@@ -178,15 +206,19 @@ li i a{
 .ofertaspollo article img{
     border-radius: 20px ;
 }
+.ofertaspollo article{
+    margin-left:10px ;
+    margin-bottom: 25px;
+}
 .ofertaspollo div{
     text-align: center;
     margin: 6px;
 }
-.ofertaspollo .divPorKg {
+.divPorKg {
     font-weight: bolder;
     font-family: "Frank Ruhl Libre" ;
     font-size: 22px;
-    color: #004443;
+    color: #aab3ab;
     border-bottom: 1px solid #d2d5d8;
     padding-bottom: 1%;
     padding-top:2%;
@@ -198,31 +230,126 @@ li i a{
     line-height: 1.8;
     font-size: 30px;
     font-family: "Frank Ruhl Libre" ;
-    color: #004443;
+    color: #aab3ab;
 }
 .ofertaspollo div p {
     margin-top: 8px;
     color:#aab3ab;
     font-weight: bolder;
-
 }
-
-.ofertasCarne{
+.ofertasCarne {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
+    padding-bottom: 5%;
 }
-.ofertasCarne p{
-    color: #0d0e0d;
+.ofertasCarne div p a{
+    color: #aab3ab;
     text-align: center;
-     margin: 0 auto;
-    display: inline-block;
+    margin: 0 auto;
     width: 86%;
 }
+.ofertasCarne article{ 
+    text-align: center;
+    margin-left:10px ;
+    margin-bottom: 25px;
+}
+.ofertasCarne a{
+    color: #aab3ab;
+    font-family: "Frank Ruhl Libre" ;
+    font-size: 30px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+.ofertasCarne img{
+    border-radius: 20px;
+}
+.ofertasCarne div p{
+    color: #aab3ab;
+    line-height: 1.8;
+    font-weight: bolder;
+}
+.novedadesGrid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.novedadesGrid div{
+    margin: 15px;
 
+    
+    
+}
+.novedadesGrid div h3{
+    background-color: #ffffa2;
+    text-align: center;
+    font-size: 35px;
+    margin: 5px;
+}
+.novedadesGrid p{ 
+    color: white;
+}
+.productosNuevos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-bottom: 5%;
+}
 
-   
+.productosNuevos img {
+    border-radius: 80px;
+    margin-bottom: 20px;
+    border:ridge 4px;
+}
+.productosNuevos a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px ;
+    color: yellow;
+    border-style: dashed ;
+    padding: 3px;
+    margin: 2%;
+}
+.productosDestacados{
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+}
+.productosDestacados article{
+    text-align: center;
+} 
+.productosDestacados p{
+    color: #aab3ab;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.productosDestacados img{
+    border:groove 10px;
+}
+.productosDestacados a{
+    text-decoration: none;
+    color: yellow;
+    border-style: dashed ;
+    padding: 8px;
+    line-height: 4;
+}
+ 
+anside{ 
+    background-color: green;
+    display: grid;
+    height: 900px;
+    justify-content: 
+}
+video { 
+    align-self: center;
+
+}   
+    
+    
     
     
