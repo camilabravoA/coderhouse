@@ -6,6 +6,7 @@ font-family: 'Poppins', sans-serif;*/
     margin: 0;
     padding: 0;
 }
+
 main{
     background-image: url(/img/fondo-madera-negro.jpg);
 }
@@ -338,18 +339,106 @@ li i a{
     padding: 8px;
     line-height: 4;
 }
- 
-anside{ 
-    background-color: green;
-    display: grid;
-    height: 900px;
-    justify-content: 
+.promoyVideo{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-video { 
-    align-self: center;
+.promoyVideo div{
+    padding-bottom: 5%;
 
-}   
+}
+.promoyVideo div video{
+    margin-right: 5%;
+}
+.promoyVideo div img{
+    margin-left: 180px;
+    border: ridge white;
+    border-width: 5px;
+}
+
+
+
+@media (max-width:360px) {
+   
+    ul { 
+   
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-size: 15px;
+    margin-top: 2.5%;
+    }
     
+    .logo{
+        margin-left: 20px;
+        width: 70px;
+    }
+    .ofertaspollo{
+        padding-top: 10%;
+    }
+    .ofertaspollo img{
+        width: 220px;
+    }
+    .borderPrecios{ 
+        border: 0;
+    }
+    .divPorKg {
+        font-size: 19px;
+    } 
+    .ofertasCarne{
+        padding-top: 15px;
+    }
+    .ofertasCarne img{
+        width: 220px;
+    }
+    .ofertasCarne{
+        padding-bottom: 9%;
+    }
+    .fa-cart-shopping { 
+        color: green
     
+    }
+    .fa-whatsapp {
+        font-size: 46px;
+        bottom: 8px;
+        
+    }
+    .footer div h3 { 
+    font-size: 18px;
+    font-weight: bold;
     
+    }
+
+    .footer div ol li{
+        font-size: 12px;
+    }
+    .followus h5 {
+        font-size: 32px;
+    }
+    .fa-instagram{
+        font-size: 30px;
+    }  
+    .parrafo{
+        font-size: 12px;
+        text-align: left;
+    }
     
+    .promoyVideo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .promoyVideo div{
+        width: 100%;
+    }
+    .promoyVideo img{
+        width:150px;
+
+    }
+    .promoyVideo video{
+        width: 150px;
+        margin-left: 5%;
+    }
+
+}
